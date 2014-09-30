@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/nav-drop-down.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+           <header class="header-inner">
+          <div class="flex-brand wrap">
+            <ul><li><a href="http://www.lasermtedenswimclub.co.nz" title="return to homepage">
+                <img class="flex-brand" src="img/Laser-Mt-Eden.png" alt="Laser Mt Eden Swim club"></a></li></ul>
+              
+          </div>
+          <div class="search-container">
+             <form id="searchForm" action="search/SiteSearch" method="get">
+                 <i class="fa fa-search"></i>
+                 <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
+             </form> 
+         </div>
+    </header>  
+<!-- Drop down menu header -->
+     <header>      
+      <div id="main-header" class="widgets-colomn">
+        <ul id="main-nav">
+          <li><div><a class="latest-news" data-url href="/news">
+          <span>latest news</span>
+          <i class="fa fa-newspaper-o"></i>
+          </a>
+          </div>
+          </li>
+          <li><a href="/meets"><span>upcoming meets</span></a></li>
+          <li><a href="/gallery"><span>gallery</span></a></li>
+          <li> 
+          <span class="locate-squad-touch">locate a squad</span> 
+          <div id="select">
+          <select id="select-squad">
+              <option value="0">choose a location</option>
+              <option value="1"><a data-url href="#">Mt Eden</a></option>
+              <option value="2"><a data-url href="#">Kelston</a></option>
+          </select>
+          <p>or</p>
+          <form action="search/SiteSearch" method="get" id="search-squad">
+                 <i class="fa fa-search"></i><input type="search" placeholder="search" autocomplete="off">
+            </form>
+         </div>
+          </li>
+          <li><a href="/contact"><span>contact</span></a></li>
+          <li><a href="/links"><span>useful links</span></a></li>
+          <li><a href="/records"><span>records</span></a></li>
+          <li><a href="/login"><span>admin login</span></a></li>
+      </ul>
+      <div class="nav-handle">
+          <a href="#" class="js-nav-handle icon mini">
+            <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="20px" height="14px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
+            <rect fill="#404040" width="20" height="2"></rect>
+            <rect y="6" fill="#404040" width="20" height="2"></rect>
+            <rect y="12" fill="#404040" width="20" height="2"></rect>
+            </svg>
+        <p class="menu-text">Menu</p>
+    </a>
+</div>
+</div>
+</header> 
+
+
+
+<div id="flex-google"></div>
+
+
+    
+
+
+
+    
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/google_map.js"></script>
+        <script src="js/geo-min.js"></script>
+        <script src="js/main.js"></script>
+        
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1318 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+body{
+  font-family: sans-serif;
+  font-weight: 100;
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+}
+li{
+    text-decoration: none;
+  list-style-type: none;
+}
+h3{
+  font-weight: 200;
+font-size: 1em;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*-----------------------nav bar-----------------*/
+
+header #main-header{
+  z-index: 1000;
+  position: relative;
+  
+  /*background-color: white;*/
+
+}
+
+
+#main-nav{
+  height: 0%;
+  /*background-color: white;*/
+  margin-left: -1em;
+}
+
+.menu-text{
+  position: absolute;
+  margin-left: -3.2em;
+  margin-top: -1.8em;
+  color: #333333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul#main-nav li {
+
+display: block;
+left: 0;
+top: 60px;
+clear: left;
+/*border-bottom: #d2d2d2 1px solid;*/
+margin: 0;
+background-color: white;
+height: 15px;
+color: black;
+font-weight: 100;
+height: 0em;
+width: 0em;
+transition: height 2s ease;
+overflow: hidden;
+transition: background-color 2s;
+}
+header #main-header ul#main-nav li a{
+  text-decoration: none;
+  color: black;
+  
+}
+header #main-header ul#main-nav li a{
+  text-decoration: none;
+  color: black;
+}
+
+header #main-header #nav-handle {
+position: absolute;
+top: 0;
+right: 0;
+height: 56px;
+width: 56px;
+background-color: transparent;
+}
+.nav-handle{
+position: absolute;
+ right: 0;
+ top: -4.3em;
+ padding: 1em;
+}
+.icon {
+display: inline-block;
+overflow: hidden;
+-webkit-transition-duration: 0.1s;
+-moz-transition-duration: 0.1s;
+-o-transition-duration: 0.1s;
+transition-duration: 0.1s;
+-webkit-transition-property: all;
+-moz-transition-property: all;
+-o-transition-property: all;
+transition-property: all;
+}
+.icon.mini svg {
+width: 20px;
+height: 20px;
+}
+.icon svg {
+max-height: 100%;
+}
+
+
+/*ul#main-nav li:hover{
+background-color: #7EB847;
+background-image: -ms-linear-gradient(top, #7EB847, #73A941);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7EB847), to(#73A941));
+background-image: -webkit-linear-gradient(top, #7EB847, #73A941);
+background-image: -o-linear-gradient(top, #7EB847, #73A941);
+background-image: -moz-linear-gradient(top, #7EB847, #73A941);
+background-image: linear-gradient(top, #7EB847, #73A941);
+background-repeat: repeat-x;
+color: white;
+font-weight: 100;
+-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+-ms-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+-o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+
+}*/
+
+/*span .font-awesome {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    color: white;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    height: 3.2em;
+    width: 3em;
+    
+}
+
+
+*/
+
+span #i{
+  outline: 1px red solid;
+  width: 5em;
+  height: 5em;
+  background-color: grey;
+}
+
+/*-----------------------show dropdown list with search location and search bar-----------------*/
+
+
+
+#select-squad{
+  margin-top: 1em;
+  width: 98%;
+  height: 2em;
+  font-weight: 100;
+  background-color: #fff;
+
+}
+#select-squad input{
+  text-indent: 1.5em;
+  width: 98%;
+  height: 1.7em;
+  font-weight: 100;
+  border-radius: 5px;
+  border: 1px solid rgb(166, 166, 166);
+  color: #222;
+}
+
+#search-squad{
+  margin-top: 1em;
+  width: 98%;
+  height: 2em;
+  font-weight: 100;
+  background-color: #fff;
+
+}
+#search-squad input{
+  text-indent: 1.5em;
+  width: 99.5%;
+  height: 1.7em;
+  font-weight: 100;
+  border-radius: 5px;
+  border: 1px solid rgb(166, 166, 166);
+  color: #222;
+}
+
+
+#select{
+  width: 0;
+  height: 0;
+  display: none;
+  overflow: hidden;
+}
+
+#select.show{
+    width: 100%;
+  height: 100%;
+  display: block;
+}
+/*-----------------------show dropdown list with icons-----------------*/
+
+/*.fa-newspaper-o{
+  top: 0;
+  margin-right: 1em;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  z-index: 1000;
+  outline: 1px red solid;
+  position: absolute;
+  color: black;
+}
+*/
+
+/*-----------------------Latest News with Slider-----------------*/
+
+.content{
+  align-items: center;
+  width: 100%;
+  height: 6.5em;
+  background-color: rgba(0,107,182,0.75);
+  position: relative;
+  z-index: 1000;
+  margin-top: -6.8em;
+
+}
+
+.content ul li{
+  list-style-type: none;
+  text-decoration: none;
+
+}
+.content h3{
+  font-weight: 200;
+  color:#99FFFF;
+  font-size: 1em;
+  margin-top: -0.5em;
+  margin-left: -1.5em;
+  padding-top: 0.5em;
+  font-family: sans-serif;
+}
+
+.date{
+  float: right;
+  font-weight: 200;
+  color:#99FFFF;
+  font-size: 1em;
+  margin-top: -2.2em;
+  margin-right: 0.8em;
+  font-family: sans-serif
+}
+#news-contents{
+  width: 100%;
+  padding-right: 0.2em;
+  color: white;
+  font-weight: 100;
+  margin-left: -1.8em;
+  font-size: 0.8em;
+  margin-top: -0.8em;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+.read-more{
+  z-index: 1000;
+  color: white;
+  margin-top: -2.5em;
+  margin-right: 1em;
+  font-size: 0.8em;
+  float: right;
+}
+/* ==========================================================================
+   svg polygons
+   ========================================================================== */
+#blue-polygon{
+  position: absolute;
+  z-index: 1000;
+  margin-top: 24.2em;
+  margin-left: 9em;
+  /*margin-left: 9.5em;*/
+  color: #0872B8;
+
+}
+#silver-polygon{
+  color: #F1F1F1;
+  position: absolute;
+  z-index: 1000;
+  margin-top: -1.7em;
+  margin-left: 9em;
+}
+#gallery-polygon{
+  color: #F1F1F1;
+  position: absolute;
+  z-index: 1000;
+  margin-top: -1em;
+  margin-left: 9em;
+}
+#grey-polygon{
+    color: white;
+  position: absolute;
+  z-index: 1000;
+  margin-top: -0.6em;
+  margin-left: 9em;
+}
+/* ==========================================================================
+   Meets
+   ========================================================================== */
+   article #meets-list{
+    background-color: #F1F1F1;
+    width: 100%;
+
+   }
+#meets-list{
+  position: relative;
+  margin-top: 23em;
+  font-size: 1em;
+  padding-top: 2em;
+  
+}
+
+.meet-date{
+  align-items: center;
+  width: 97%;
+  position: relative;
+  background-color: #CCCCCC;
+  text-indent: 0.5em;
+  height: 1.4em; 
+  margin-left: -0.15em;
+}
+.meet-divider{
+  align-items: center;
+  width: 97%;
+  position: relative;
+  background-color: #CCCCCC;
+  text-indent: 0.5em;
+  height: 0.2em; 
+  margin-left: -0.15em;
+}
+.meet{
+  position: relative;
+  margin-left: 1em;
+  height: 4.2em;
+  margin-bottom: 0.5em;
+  
+}
+
+.meet-descriptionst ul li{
+  float: left;
+}
+/*-----------------------Meet/Events Date-----------------*/
+
+.date-background{
+  width: 3.4em;
+  height: 3.4em;
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  margin-top: -0.8em;
+  z-index: 300;
+  margin-left: -0.1em;
+}
+
+.date-background h3{
+  position: relative;
+  font-size: 2.35em;
+  font-weight: 200;
+  margin-top: -0.15em;
+  margin-left: 0.15em;
+  z-index: 305;
+}
+.date-background p{
+  position: relative;
+  font-size: 0.85em;
+  font-weight: 100;
+  margin-top: -3.6em;
+  margin-left: 0.45em;
+  letter-spacing: 0.1em;
+  z-index: 305;
+}
+
+
+/*-----------------------Meet/Events Decriptions-----------------*/
+.meet-descriptions{
+  width: 97%;
+  height: 3.4em;
+  position: absolute;
+  margin-top: -0.8em;
+  margin-bottom: 1em;
+  background-color: #FFFFFF;
+  margin-left: -0.2em;
+  color: #333333;
+}
+.title h3{
+  font-size: 0.9em;
+  color: #0872B8;
+  margin-left: 1.5em;
+  margin-top: -1em;
+  font-weight: bold;
+}
+.meet-descriptions span{
+  color:#0872B8; 
+}
+.entry, .cost{
+  margin-top: -1.2em;
+  font-size: 0.7em;
+  margin-left: 1.8em;
+
+}
+/*
+use this for mobile!!!!!!!*/
+.cost{
+  margin-top: -3.3em;
+  float: left;
+}
+/*.cost{
+  margin-top: -1.8em;
+  float: left;
+}
+*/
+
+
+.where{
+  float: left;
+  font-size: 0.7em;
+  margin-top: -3.35em;
+  margin-left: 13.4em;
+}
+.meet-descriptions i{
+   font-size: 0.8em;
+   padding-right: 0.5em;
+}
+.arrow{
+  float: right;
+  font-size: 2em;
+  margin-left: 6.5em;
+  margin-top: -1.9em;
+  /*display: none;*/
+ 
+}
+
+
+/*-----------------------Gallery-----------------*/
+
+#gallery{
+  position: relative;
+
+}
+#gallery img{
+  width: 100%;
+  height: 100%;
+}
+/*-----------------------Squads------------------------*/
+.squads{
+  background-color: #F1F1F1;
+  margin-top: -0.5em;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+.squads h3{
+  text-align: center;
+}
+.squads p{
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.squads a{
+  color: #3F3F3F;
+  transition: color 1s ease;
+}
+.squads a:hover{
+  color: #99FFFF;
+}
+.senior-squad p{
+  margin-top: -0.8em;
+}
+.junior-squad p{
+  margin-top: -0.8em;
+}
+.mini-squad p{
+  margin-top: -0.8em;
+}
+.senior-squad{
+  background-color: #FFFFFF;
+  width: 23em;
+  height: 12.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+.junior-squad{
+  background-color: #FFFFFF;
+  width: 23em;
+  height: 12em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+.mini-squad{
+  background-color: #FFFFFF;
+  width: 23em;
+  height: 12em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #CCCCCC;
+}
+.senior-squad img{
+  margin-left: 38%;
+  margin-top: 1em;
+}
+.junior-squad img{
+  margin-left: 38%;
+  margin-top: 2em;
+}
+.mini-squad img{
+  margin-left: 32%;
+  margin-top: 1.5em;
+}
+
+/*-----------------------Information and links-----------------*/
+
+article .club-info{
+  background-color: #F1F1F1;
+  height: 12em;
+  font-family: sans-serif;
+  font-weight: 100;
+
+}
+.club-info{
+    margin-top: -1.5em;
+}
+
+.club-info h3{
+  color: #222;
+  text-align: center;
+  padding-top: 1em;
+
+
+}
+.club-info p{
+  color: white;
+  width: 8em;
+  font-size: 0.9em;
+  font-weight: 100;
+  text-align: center;
+}
+.phone{
+  margin-left: 2em;
+  margin-top: -2.5em;
+}
+.phone-image{
+    margin-left: -1em;
+  
+}
+
+.email{
+    margin-left: 12em;
+  margin-top: -5.2em;
+}
+.email-image{
+      margin-left: 9em;
+  margin-top: -6.3em;
+}
+.dgss{
+  margin-left: -2.5em;
+  margin-top: -0.5em;
+}
+.swimnz{
+  margin-left: 7em;
+  margin-top: -3em;
+}
+.link{
+    margin-left: 14.5em;
+  margin-top: -3.5em;
+}
+.fina{
+  margin-left: -4em;
+  margin-top: -0.2em;
+}
+/*-----------------------enquiry form-----------------*/
+legend{
+  margin-top: 1em;
+  margin-left: 32%;
+  border: none;
+}
+.form{
+  background-image: url(img/grid_DominikKiss_SubtlePatterns.jpg);
+  margin-top: 2em;
+ 
+}
+.form h3{
+  margin-left: 30%;
+}
+
+input {
+    border: none;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+    -webkit-appearance: none;
+}
+
+#enquiry-form{
+  margin-top: -2em;
+}
+
+
+.form form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    color: #606468;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    height: 3.2em;
+    width: 3em;
+}
+
+
+.form form input[type="text"], input[type="password"], input[type="email"], textarea {
+    background-color: #3b4148;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 18em;
+    height: 3.2em;
+}
+textarea{
+  border-radius: 3px 3px 3px 3px;
+    width: 21em;
+    height: 5em;
+}
+
+input[type="submit"] {
+    border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    -webkit-border-radius: 0.1em;
+    /*background-color: rgba(0,107,182,0.75);*/
+    background-color: #7EB847;
+    color: #eee;
+    font-weight: lighter;
+   
+    
+    text-transform: uppercase;
+    width: 23em;
+    height: 3em;
+}
+
+#enquiry form input[type="submit"]:hover {
+    background-color: #d44179;
+}
+
+#enquiry > p {
+    text-align: center;
+}
+
+#enquiry > p span {
+    padding-left: 5px;
+}
+
+p a{
+    color: black;
+}
+p a:hover{
+    color: #ea4c88;
+    text-decoration: none;
+}
+
+
+label.error{
+    /*outline: red 1px solid;*/
+    position: relative;
+   color: #ea4c88;
+}
+
+/*-----------------------records-----------------*/
+article #records-list{
+  
+  background-color:#F1F1F1;
+  margin-left: -2.5em;
+}
+
+.record-background{
+  width: 3.4em;
+  height: 3.4em;
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  margin-top: -0.8em;
+  z-index: 300;
+  margin-left: -0.1em;
+}
+
+.record-background h3{
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 0.3em;
+  margin-left: 0em;
+  z-index: 305;
+}
+.record-where{
+  float: left;
+  font-size: 0.7em;
+  margin-top: -4.5em;
+  margin-left: 11em;
+}
+.record-date{
+ margin-top: -3.3em;
+ margin-left: 11em;
+  float: left;
+font-size: 0.7em;
+}
+#records{
+  padding-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+}
+/*-----------------------footer-----------------*/
+footer{
+  background-color: #333333;
+  color:#99FFFF;
+  font-size: 0.8em;
+  font-weight: 100;
+  height: 5em;
+}
+footer p{
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+font-family: sans-serif;
+font-weight: 100;
+}
+
+/*-----------------------show dropdown list-----------------*/
+
+#main-nav li.show {
+padding-top: 15px;
+padding-left: 5px;
+width: 100%;
+height: 1em;
+left: 0;
+top: 60px;
+display: block;
+clear: left;
+padding-bottom: 1.0em;
+border-bottom: #d2d2d2 1px solid;
+margin: 0;
+background-color: white;
+margin-top: 1em;
+margin-bottom: 1em;
+color: black;
+font-weight: 100;
+transition: height 1s ease;
+}
+#main-nav li.show:nth-child(4) {
+    cursor: pointer;
+    padding-top: 15px;
+padding-left: 5px;
+width: 100%;
+height: 100%;
+left: 0;
+top: 60px;
+display: block;
+clear: left;
+margin-top: 1em;
+margin-bottom: 2em;
+border-bottom: #d2d2d2 1px solid;
+margin: 0;
+background-color: white;
+color: black;
+font-weight: 100;
+transition: height 1s ease;
+}
+
+#main-nav li.show:nth-child(4).search-bar {
+  cursor: pointer;
+width: 50%;
+  height: 30%;
+    font-family: sans-serif;
+  font-weight: 100;
+padding: 0.2em;
+margin-bottom: 0.5em;
+
+
+}
+
+
+
+
+/*mobile*/
+.flex-container {
+   display: -webkit-flex;
+   display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
+  display: -ms-flexbox;
+   -ms-flex-wrap: wrap;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+/*   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;*/
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+
+  
+}
+/*.flex-container figure img{
+   height: 100%;
+   width: 100%;
+}*/
+
+
+.wrap { 
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+} 
+
+/*//this is set on the img slide along with latest news for responsive - not sure about this??? as it distorts images/*/
+
+.flex-container{
+  /*width: 100%;*/
+  height: 100%;
+  padding: 0;
+  /*margin: 0 0 2em 0;*/
+  list-style-type: none;
+}
+ 
+.flex-container li{
+  background-color: white;
+  
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+ 
+.flex-container li a{
+  display: block;
+  width: 100%;
+  background: transparent;
+  
+
+}
+ 
+ .flex-container li a{
+  display: block;
+  width: 100%;
+}
+/*.flex-container img{
+  max-width: 100%;
+}
+*/
+li.flex-item{
+  border: none;
+  position: relative;
+  width: 6em;
+  height: 6em;
+}
+/* ==========================================================================
+   BRAND & Transparent White background
+   ========================================================================== */
+.brand{
+    margin-top: 2em;
+   }
+.header-inner{
+  height: 140px;
+  position: relative;
+  z-index: 1000;
+  margin-top: -2em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.flex-brand{
+  height: 30%;
+  margin-left: -0.5em;
+  margin-top: 3em;
+  display: -webkit-flex;
+   display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+   display: -ms-flexbox;  
+
+}
+/* ==========================================================================
+   SEARCH 
+   ========================================================================== */
+.search-container{
+  position: absolute;
+  width: 60%;
+  height: 30%;
+  margin-top: 2.6em;
+  margin-left: 0.2em;
+  letter-spacing: 0px;
+  font-size: 1.2em;
+  padding: 3px 11px;
+  display: block;
+
+}
+
+.search-bar{
+  text-indent: 1.5em;
+  font-size: 0.9em;
+    font-family: sans-serif;
+  font-weight: 100;
+  width: 11em;
+  
+ 
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid rgb(166, 166, 166);
+  color: #222;
+  height: 1.7em;
+font-weight: 100;
+}
+.fa-search {
+  z-index: 1000;
+  position: absolute;
+  margin-top: 0.35em;
+  margin-left: 0.25em;
+}
+
+/* ==========================================================================
+   BANNER
+   ========================================================================== */
+#background-image{
+  margin-top: -2em;
+  position: absolute;
+  z-index: 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+/* ==========================================================================
+   GOOGLE MAP
+   ========================================================================== */
+
+#flex-google {
+   display: -webkit-flex;
+   display: flex;
+   display: -ms -webkit-flex;
+   display: -ms flex;
+  display: -ms-flexbox;
+   -ms-flex-wrap: wrap;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+  outline: 1px red solid;
+  height: 32em;
+  
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 60em) {
+    
+
+.nav-handle{
+  display: none;
+
+}
+
+#main-nav{
+  width: 40em;
+
+}
+#main-nav li{
+  height: 3em;
+  width: 10em;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
